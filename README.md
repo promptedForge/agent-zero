@@ -124,6 +124,14 @@ docker run -p 50001:80 agent0ai/agent-zero
 # Visit http://localhost:50001 to start
 ```
 
+### ☁️ Deploy to Railway
+
+Deploy Agent Zero to the cloud with one click:
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/agent-zero)
+
+Or follow the [Railway Deployment Guide](./docs/railway-deployment.md) for detailed instructions.
+
 ## 🐳 Fully Dockerized, with Speech-to-Text and TTS
 
 ![Settings](docs/res/settings-page-ui.png)

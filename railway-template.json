@@ -1,0 +1,38 @@
+{
+  "name": "Agent Zero",
+  "description": "A personal, organic agentic AI framework that grows and learns with you",
+  "repository": "https://github.com/agent0ai/agent-zero",
+  "logo": "https://raw.githubusercontent.com/agent0ai/agent-zero/main/docs/res/logo.png",
+  "keywords": ["ai", "agent", "llm", "assistant", "docker"],
+  "services": {
+    "agent-zero": {
+      "build": {
+        "dockerfile": "Dockerfile"
+      },
+      "env": {
+        "WEB_UI_HOST": {
+          "description": "Host to bind the web UI to (should be 0.0.0.0 for Railway)",
+          "value": "0.0.0.0"
+        },
+        "AUTH_LOGIN": {
+          "description": "Optional: Username for authentication",
+          "required": false
+        },
+        "AUTH_PASSWORD": {
+          "description": "Optional: Password for authentication",
+          "required": false
+        },
+        "FLASK_SECRET_KEY": {
+          "description": "Secret key for Flask sessions (auto-generated if not set)",
+          "generator": "secret",
+          "required": false
+        }
+      },
+      "healthcheck": {
+        "path": "/",
+        "interval": 30,
+        "timeout": 10
+      }
+    }
+  }
+}
