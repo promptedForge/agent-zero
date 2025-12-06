@@ -10,10 +10,6 @@
         "dockerfile": "Dockerfile"
       },
       "env": {
-        "WEB_UI_HOST": {
-          "description": "Host to bind the web UI to (should be 0.0.0.0 for Railway)",
-          "value": "0.0.0.0"
-        },
         "AUTH_LOGIN": {
           "description": "Optional: Username for authentication",
           "required": false

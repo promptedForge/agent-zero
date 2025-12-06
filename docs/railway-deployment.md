@@ -38,14 +38,12 @@ This guide will help you deploy Agent Zero to Railway.app, a modern cloud platfo
 
    **Optional Variables:**
    ```
-   WEB_UI_HOST=0.0.0.0
-   WEB_UI_PORT=$PORT
-   FLASK_SECRET_KEY=<your-secret-key>
    AUTH_LOGIN=<your-username>
    AUTH_PASSWORD=<your-password>
+   FLASK_SECRET_KEY=<your-secret-key>
    ```
 
-   **Note:** Railway automatically sets the `PORT` environment variable. The application will use this port automatically.
+   **Note:** Railway automatically sets the `PORT` environment variable. The application will detect and use this port automatically - no manual configuration needed.
 
 4. **Access Your Application**
    - Once deployed, Railway will provide you with a public URL
