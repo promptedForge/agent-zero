@@ -35,4 +35,5 @@ EXPOSE 80
 RUN chmod +x /exe/initialize.sh /exe/run_A0.sh /exe/run_searxng.sh /exe/run_tunnel_api.sh
 
 # Initialize runtime and switch to supervisord
-CMD ["/exe/initialize.sh", "$BRANCH"]
+# Use shell form to allow environment variable expansion
+CMD /exe/initialize.sh main
