@@ -3,6 +3,7 @@
 To begin with Agent Zero, follow the links below for detailed guides on various topics:
 
 - **[Installation](installation.md):** Set up (or [update](installation.md#how-to-update-agent-zero)) Agent Zero on your system.
+- **[Railway Deployment](railway-deployment.md):** Deploy Agent Zero to Railway cloud platform.
 - **[Usage Guide](usage.md):** Explore GUI features and usage scenarios.
 - **[Development](development.md):** Set up a development environment for Agent Zero.
 - **[Extensibility](extensibility.md):** Learn how to create custom extensions for Agent Zero.
@@ -31,6 +32,10 @@ To begin with Agent Zero, follow the links below for detailed guides on various 
   - [Using Agent Zero on Mobile](installation.md#using-agent-zero-on-your-mobile-device)
   - [How to Update Agent Zero](installation.md#how-to-update-agent-zero)
   - [Full Binaries Installation](installation.md#in-depth-guide-for-full-binaries-installation)
+- [Railway Deployment Guide](railway-deployment.md)
+  - [Deploy from GitHub](railway-deployment.md#method-1-deploy-from-github-recommended)
+  - [Deploy using Railway CLI](railway-deployment.md#method-2-deploy-using-railway-cli)
+  - [Post-Deployment Configuration](railway-deployment.md#important-notes)
 - [Usage Guide](usage.md)
   - [Basic Operations](usage.md#basic-operations)
     - [Restart Framework](usage.md#restart-framework)
