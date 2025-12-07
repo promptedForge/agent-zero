@@ -6,10 +6,13 @@
 python /a0/prepare.py --dockerized=true
 # python /a0/preload.py --dockerized=true # no need to run preload if it's done during container build
 
-echo "Starting A0..."
+# Use PORT environment variable if set (for Railway), otherwise default to 80
+PORT=${PORT:-80}
+
+echo "Starting A0 on port $PORT..."
 exec python /a0/run_ui.py \
     --dockerized=true \
-    --port=80 \
+    --port=$PORT \
     --host="0.0.0.0"
     # --code_exec_ssh_enabled=true \
     # --code_exec_ssh_addr="localhost" \
